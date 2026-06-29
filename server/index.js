@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 // Initialize SQLite database
-const db = new Database('aangan.db', { verbose: console.log });
+const db = new Database('rivaaj.db', { verbose: console.log });
 db.pragma('journal_mode = WAL');
 
 // Setup DB Schema
