@@ -116,11 +116,9 @@ const CustomerAuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
           </button>
 
           <div style={{ padding: '2.5rem' }}>
-            <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-              <h2 style={{ fontFamily: 'var(--font-logo)', fontSize: '2rem', color: 'var(--color-accent)', marginBottom: '0.5rem', letterSpacing: '2px' }}>
-                RIVAAJ
-              </h2>
-              <p style={{ color: '#666', fontSize: '0.9rem' }}>
+            <div style={{ textAlign: 'center', marginBottom: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <img src="/logo.jpg" alt="स्त्री Society Logo" style={{ height: '80px', objectFit: 'contain', mixBlendMode: 'multiply', marginBottom: '0.5rem', transform: 'scale(1.2)' }} />
+              <p style={{ color: '#666', fontSize: '0.9rem', marginTop: '0.5rem' }}>
                 {view === 'login' ? 'Welcome back to your premium storefront' : 
                  view === 'signup' ? 'Create an account to track your orders' : 
                  'Reset your password'}

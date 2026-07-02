@@ -39,7 +39,7 @@ const BrandPhilosophy = () => {
                    Rooted in Tradition.<br/>Designed for Today.
                  </h2>
                  <p style={{ color: '#AAAAAA', fontSize: '1.15rem', lineHeight: 1.8, marginBottom: '3rem', maxWidth: '90%' }}>
-                   At <span className="font-logo" style={{ color: '#FFFFFF', letterSpacing: '1px' }}>RIVAAJ</span>, we believe that ethnic wear is more than just clothing; it's a vibrant celebration of heritage and art. We carefully source the finest pure cotton and collaborate directly with master artisans to create timeless pieces that breathe life into modern wardrobes.
+                   At <span className="font-logo" style={{ color: '#FFFFFF', letterSpacing: '1px' }}>स्त्री SOCIETY</span>, we believe that ethnic wear is more than just clothing; it's a vibrant celebration of heritage and art. We carefully source the finest pure cotton and collaborate directly with master artisans to create timeless pieces that breathe life into modern wardrobes.
                  </p>
                  <motion.button 
                     whileHover={{ scale: 1.05, backgroundColor: '#FFFFFF', color: '#111111' }}

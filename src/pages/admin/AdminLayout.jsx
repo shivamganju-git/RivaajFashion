@@ -47,7 +47,7 @@ const AdminLayout = () => {
       {/* Sidebar */}
       <div className="w-64 bg-white border-r shadow-sm flex flex-col">
         <div className="h-16 flex items-center px-6 border-b">
-          <h1 className="font-logo text-accent text-xl tracking-widest font-bold">RIVAAJ ADMIN</h1>
+          <h1 className="font-logo text-accent text-xl tracking-widest font-bold">स्त्री SOCIETY ADMIN</h1>
         </div>
         
         <nav className="flex-1 px-4 py-6 space-y-2">

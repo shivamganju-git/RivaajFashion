@@ -90,7 +90,7 @@ const QuickViewModal = ({ isOpen, onClose, product }) => {
 
           {/* Right: Content */}
           <div style={{ flex: '1 1 55%', padding: '2.5rem 2.5rem 2.5rem 1rem', display: 'flex', flexDirection: 'column', overflowY: 'auto' }}>
-            <span style={{ fontSize: '0.7rem', letterSpacing: '2px', color: '#999', marginBottom: '0.4rem', textTransform: 'uppercase' }}>Rivaaj Studios</span>
+            <span style={{ fontSize: '0.7rem', letterSpacing: '2px', color: '#999', marginBottom: '0.4rem', textTransform: 'uppercase' }}>स्त्री Society</span>
             <h2 style={{ fontSize: '1.25rem', fontWeight: 500, marginBottom: '0.8rem', color: 'var(--color-text)', letterSpacing: '0.5px' }}>{product.title}</h2>
 
             <div style={{ display: 'flex', gap: '0.8rem', alignItems: 'center', marginBottom: '1.5rem' }}>

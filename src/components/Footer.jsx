@@ -33,10 +33,10 @@ const Footer = () => {
           <div className="flex flex-col pl-4">
             <h3 className="text-sm font-semibold tracking-[0.15em] uppercase mb-4">Office Address</h3>
             <address className="not-italic text-sm opacity-80 leading-loose">
-              Rivaaj Studios<br />
+              स्त्री Society<br />
               Jammu 180013<br /><br />
               <span className="font-semibold">Contact No:</span> +91 7006176004<br />
-              <span className="font-semibold">Email:</span> rivaajsupport@gmail.com
+              <span className="font-semibold">Email:</span> shopwithrivaaj@gmail.com
             </address>
           </div>
 
@@ -69,7 +69,7 @@ const Footer = () => {
         {/* Bottom Section: Socials & Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between border-t border-gray-200 pt-8 mt-8">
           <div className="text-xs tracking-wider opacity-60 order-2 md:order-1 mt-6 md:mt-0">
-            &copy; {new Date().getFullYear()} - RIVAAJ
+            &copy; {new Date().getFullYear()} - स्त्री SOCIETY
           </div>
 
           <div className="flex items-center gap-6 order-1 md:order-2 opacity-70">

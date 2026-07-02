@@ -36,7 +36,7 @@ const AdminLogin = () => {
             <Lock className="h-8 w-8 text-accent" />
           </div>
           <h2 className="text-center text-3xl font-extrabold text-gray-900 font-logo tracking-widest text-accent">
-            RIVAAJ ADMIN
+            स्त्री SOCIETY ADMIN
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
             Sign in to manage your premium storefront

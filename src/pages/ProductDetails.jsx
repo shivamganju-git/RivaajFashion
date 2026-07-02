@@ -167,7 +167,7 @@ const ProductDetails = ({ onNavigate }) => {
           
           {/* Right: Product Info */}
           <div style={{ flex: '1 1 400px', display: 'flex', flexDirection: 'column' }}>
-            <span style={{ fontSize: '0.75rem', letterSpacing: '2px', color: '#666', marginBottom: '0.5rem' }}>Rivaaj Studios</span>
+            <span style={{ fontSize: '0.75rem', letterSpacing: '2px', color: '#666', marginBottom: '0.5rem' }}>स्त्री Society</span>
             <h1 style={{ fontSize: '1.8rem', fontWeight: 500, marginBottom: '1rem' }}>{productData.title}</h1>
             
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '2rem' }}>

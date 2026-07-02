@@ -9,7 +9,7 @@ export const MOCK_BLOGS = [
     content: `
       <p>Block printing is a timeless tradition that has shaped the textile industry of India for centuries. Its roots trace back to ancient times, with artisans passing down the intricate knowledge of carving and stamping from generation to generation.</p>
       <br/>
-      <p>At Rivaaj Studios, we believe in preserving this magnificent art form. Every kurti we design carries the soul of the artisan who meticulously carved the wooden block, dyed the fabric, and brought the pattern to life. The beauty of block printing lies in its imperfections; each stamp is slightly different, making every piece entirely unique.</p>
+      <p>At स्त्री Society, we believe in preserving this magnificent art form. Every kurti we design carries the soul of the artisan who meticulously carved the wooden block, dyed the fabric, and brought the pattern to life. The beauty of block printing lies in its imperfections; each stamp is slightly different, making every piece entirely unique.</p>
       <br/>
       <h3 style="font-size: 1.2rem; font-weight: 600; color: #4D1010; margin-bottom: 0.8rem;">The Process</h3>
       <p>The process begins with seasoned teak wood, intricately carved by master craftsmen. These blocks are then dipped into natural dyes, often derived from plants and minerals, and pressed onto unbleached cotton with immense precision and rhythm.</p>

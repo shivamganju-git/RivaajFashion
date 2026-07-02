@@ -50,10 +50,7 @@ const Popup = () => {
 
             {/* Logo */}
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.2rem', marginBottom: '1.2rem' }}>
-              <h1 className="navbar-logo-text" style={{ fontSize: '2.2rem' }}>
-                RIVAAJ
-              </h1>
-              <div className="navbar-logo-image" style={{ width: '45px', height: '45px', transform: 'translateY(-10px)' }} />
+              <img src="/logo.jpg" alt="स्त्री Society Logo" style={{ height: '85px', objectFit: 'contain', mixBlendMode: 'multiply', transform: 'scale(1.3)' }} />
             </div>
             
             <h2 style={{ fontSize: '1.2rem', fontWeight: 600, letterSpacing: '2px', marginBottom: '1rem', color: '#4D1010', textTransform: 'uppercase' }}>

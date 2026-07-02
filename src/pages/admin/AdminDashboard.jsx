@@ -29,7 +29,7 @@ const AdminDashboard = () => {
       </div>
 
       <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 text-center text-gray-500">
-        <h3 className="text-lg font-semibold text-gray-800 mb-2">Welcome to your new Rivaaj Admin!</h3>
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">Welcome to your new स्त्री Society Admin!</h3>
         <p>Once you connect your Supabase database and add products, your live stats will appear here.</p>
       </div>
     </div>

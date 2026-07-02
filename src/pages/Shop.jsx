@@ -95,7 +95,7 @@ const Shop = () => {
                   e.currentTarget.querySelector('.quick-view-btn').style.transform = 'translateY(10px)';
                 }}
               >
-                <div style={{ position: 'relative', width: '100%', height: '550px', backgroundColor: '#F8F8F8', marginBottom: '1.5rem', overflow: 'hidden' }}>
+                <div style={{ position: 'relative', width: '100%', aspectRatio: '3/4', backgroundColor: '#F8F8F8', marginBottom: '1.5rem', overflow: 'hidden' }}>
                   <img 
                     src={item.product_images?.[0]?.image_url || '/kurti_1.png'} 
                     alt={item.title} 

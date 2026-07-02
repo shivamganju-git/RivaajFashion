@@ -6,7 +6,7 @@ const JourneySection = () => {
     {
       id: 1,
       date: 'January 2024',
-      title: 'The Inception of Rivaaj',
+      title: 'The Inception of स्त्री Society',
       content: 'It all started with a simple vision: to bring authentic, premium Indian ethnic wear to the modern woman. Our first workshop was a small room filled with dreams, vibrant fabrics, and immense passion.',
       image: '/kurti_2.png'
     },
@@ -41,7 +41,7 @@ const JourneySection = () => {
             OUR JOURNEY
           </h2>
           <p style={{ color: '#666', maxWidth: '600px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
-            Walk through the story of <span className="font-logo" style={{ color: 'var(--color-accent)' }}>RIVAAJ</span>. A tale of passion, tradition, and bringing timeless style to the modern Indian woman.
+            Walk through the story of <span className="font-logo" style={{ color: 'var(--color-accent)' }}>स्त्री SOCIETY</span>. A tale of passion, tradition, and bringing timeless style to the modern Indian woman.
           </p>
         </motion.div>
 

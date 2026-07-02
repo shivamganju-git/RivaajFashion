@@ -89,7 +89,7 @@ const ReelsSidebar = () => {
                 <div style={{ width: '24px', height: '24px', borderRadius: '50%', backgroundColor: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <span style={{ color: reel.color, fontSize: '10px', fontWeight: 'bold' }}>R</span>
                 </div>
-                <span style={{ fontSize: '0.9rem', fontWeight: 500 }}>Rivaaj</span>
+                <span style={{ fontSize: '0.9rem', fontWeight: 500 }}>स्त्री Society</span>
                 <span style={{ fontSize: '0.8rem', backgroundColor: 'rgba(255,255,255,0.2)', padding: '2px 8px', borderRadius: '12px' }}>Follow</span>
               </div>
               <p style={{ fontSize: '0.75rem', marginTop: '0.5rem', opacity: 0.9, maxWidth: '180px' }}>

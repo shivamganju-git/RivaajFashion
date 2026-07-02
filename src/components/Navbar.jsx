@@ -80,10 +80,7 @@ const Navbar = ({ onNavigate }) => {
             </div>
 
             <div onClick={goHome} className="navbar-brand-container">
-              <h1 className="navbar-logo-text">
-                RIVAAJ
-              </h1>
-              <div className="navbar-logo-image" />
+              <img src="/logo.jpg" alt="स्त्री Society Logo" style={{ height: '70px', objectFit: 'contain', mixBlendMode: 'multiply', transform: 'scale(1.4)', transformOrigin: 'left center' }} />
             </div>
           </div>
 

@@ -27,7 +27,7 @@ const CheckoutModal = () => {
     
     try {
       // 1. Create order on backend
-      const orderRes = await fetch('http://localhost:5001/api/orders', {
+      const orderRes = await fetch('/api/orders', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ amount: total })
@@ -46,12 +46,12 @@ const CheckoutModal = () => {
         key: 'rzp_test_YOUR_KEY_HERE', // Using test key or backend should provide it
         amount: orderData.amount,
         currency: orderData.currency,
-        name: 'Rivaaj',
+        name: 'स्त्री Society',
         description: 'Test Transaction',
         order_id: orderData.id,
         handler: async function (response) {
           // 3. Verify Payment
-          const verifyRes = await fetch('http://localhost:5001/api/verify', {
+          const verifyRes = await fetch('/api/verify', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -155,7 +155,7 @@ const CheckoutModal = () => {
                   <CheckCircle size={80} color="#4CAF50" />
                 </motion.div>
                 <h2 style={{ fontSize: '2rem', marginBottom: '1rem', fontFamily: 'var(--font-logo)', color: '#4D1010' }}>Payment Successful!</h2>
-                <p style={{ color: '#666', marginBottom: '2rem', lineHeight: 1.6 }}>Your Rivaaj order has been placed. You will receive an email confirmation shortly.</p>
+                <p style={{ color: '#666', marginBottom: '2rem', lineHeight: 1.6 }}>Your स्त्री Society order has been placed. You will receive an email confirmation shortly.</p>
                 <button onClick={handleClose} style={{ padding: '1rem 2rem', backgroundColor: '#4D1010', color: 'white', fontWeight: 600, border: 'none', borderRadius: '4px', letterSpacing: '1px' }}>
                   Continue Shopping
                 </button>

@@ -2,33 +2,47 @@ import React, { useState, useEffect } from 'react';
 import { useCart } from '../context/CartContext';
 import { Play, Heart, MessageCircle, ShoppingCart } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { supabase } from '../lib/supabaseClient';
 
 const WatchAndBuy = () => {
   const { addToCart } = useCart();
   const [watchAndBuyData, setWatchAndBuyData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5001/api/products?category=watch_buy')
-      .then(res => res.json())
-      .then(data => {
-        // Add fake views/discounts since they aren't in the basic DB schema
-        let enriched = data.map(item => ({
-          ...item,
-          discount: Math.floor(Math.random() * 30 + 40) + '% OFF',
-          views: Math.floor(Math.random() * 5001 + 100)
-        }));
+    const fetchWatchAndBuy = async () => {
+      try {
+        const { data, error } = await supabase
+          .from('products')
+          .select('*, product_images(image_url)')
+          .eq('category', 'watch_buy');
+          
+        if (error) throw error;
         
-        // Ensure at least 4 reels are shown by duplicating if necessary
-        if (enriched.length > 0 && enriched.length < 4) {
-          const needed = 4 - enriched.length;
-          for (let i = 0; i < needed; i++) {
-            enriched.push({ ...enriched[i % enriched.length], id: enriched[i % enriched.length].id + '_copy' + i });
+        if (data) {
+          // Add fake views/discounts since they aren't in the basic DB schema
+          let enriched = data.map(item => ({
+            ...item,
+            image: item.product_images?.[0]?.image_url || '/kurti_1.png', // Ensure image prop exists
+            discount: Math.floor(Math.random() * 30 + 40) + '% OFF',
+            views: Math.floor(Math.random() * 5001 + 100)
+          }));
+          
+          // Ensure at least 4 reels are shown by duplicating if necessary
+          if (enriched.length > 0 && enriched.length < 4) {
+            const needed = 4 - enriched.length;
+            for (let i = 0; i < needed; i++) {
+              enriched.push({ ...enriched[i % enriched.length], id: enriched[i % enriched.length].id + '_copy' + i });
+            }
           }
+          
+          setWatchAndBuyData(enriched);
         }
-        
-        setWatchAndBuyData(enriched);
-      })
-      .catch(err => console.error('Failed to load reels', err));
+      } catch (err) {
+        console.error('Failed to load reels', err);
+      }
+    };
+    
+    fetchWatchAndBuy();
   }, []);
 
   return (
@@ -129,7 +143,7 @@ const WatchAndBuy = () => {
                   <div style={{ width: '28px', height: '28px', borderRadius: '50%', border: '1.5px solid white', overflow: 'hidden' }}>
                     <img src="/kurti_2.png" alt="Brand" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
-                  <span style={{ color: 'white', fontWeight: 600, fontSize: '0.9rem', textShadow: '0 1px 2px rgba(0,0,0,0.5)' }}>Rivaaj Studios</span>
+                  <span style={{ color: 'white', fontWeight: 600, fontSize: '0.9rem', textShadow: '0 1px 2px rgba(0,0,0,0.5)' }}>स्त्री Society</span>
                 </div>
                 <h3 style={{ fontSize: '1.05rem', fontWeight: 500, margin: '0 0 0.5rem 0', color: 'white', lineHeight: '1.4', textShadow: '0 1px 3px rgba(0,0,0,0.5)' }}>{item.title}</h3>
                 <div style={{ display: 'flex', gap: '0.8rem', alignItems: 'center' }}>

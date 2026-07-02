@@ -36,7 +36,7 @@ const Contact = () => {
               <MapPin style={{ color: 'var(--color-accent)' }} />
               <div>
                 <h3 style={{ fontSize: '1.1rem', margin: '0 0 0.5rem 0', fontWeight: 600 }}>Visit Us</h3>
-                <p style={{ color: '#666', margin: 0, lineHeight: 1.6 }}>Rivaaj Studios<br/>Jammu 180013<br/>India</p>
+                <p style={{ color: '#666', margin: 0, lineHeight: 1.6 }}>स्त्री Society<br/>Jammu 180013<br/>India</p>
               </div>
             </div>
             
